@@ -1,0 +1,336 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+
+%\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{tgpagella}
+\usepackage{enumitem}
+\usepackage[colorlinks]{hyperref}
+\usepackage{fancyhdr} \pagestyle{fancy} \renewcommand{\headrulewidth}{0pt}
+\usepackage{dirtytalk}
+
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\Year}[1]{\emph{#1}}
+\newcommand{\uni}[1]{\textbf{#1}}
+\newcommand{\eventYear}[2]{\uni{#1}\hfill{\Year{#2}}\\}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\author{Arya D. McCarthy}
+\date{\today}
+
+% Headers
+\makeatletter
+\lfoot{\@author}
+\makeatother
+\cfoot{\today}
+\rfoot{\thepage}
+
+% Hrefs
+\newcommand{\JHU}{\href{https://www.jhu.edu/}{Johns Hopkins University}}
+\newcommand{\jhu}{\href{https://www.jhu.edu/}{JHU}}
+\newcommand{\SMU}{\href{https://www.smu.edu/}{Southern Methodist University}}
+\newcommand{\smu}{\href{https://www.smu.edu/}{SMU}}
+\newcommand{\HPHS}{\href{http://hs.hpisd.org}{Highland Park High School}}
+\newcommand{\STAN}{\href{https://www.stanford.edu/}{Stanford University}}
+\newcommand{\UOE}{\href{https://www.ed.ac.uk/}{University of Edinburgh}}
+\newcommand{\clsp}{\href{https://www.clsp.jhu.edu}{CLSP}}
+\newcommand{\CLSP}{\href{https://www.clsp.jhu.edu}{Center for Language and Speech Processing}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft2.5\hoffset\centerline{\textbf{\large Arya D. McCarthy}} % Your name at the top
+ \vspace{-0.5em}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ \vspace{-2em}
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Contact Information}
+
+\noindent
+\begin{minipage}{0.6180339887\textwidth}
+  \href{https://www.cs.jhu.edu/}{Department of Computer Science}\\
+  \href{https://www.jhu.edu/}{Johns Hopkins University}\\
+  Hackerman 321\\
+  3400 North Charles Street\\
+  Baltimore, MD 21218, USA
+\end{minipage}% This must go next to `\end{minipage}`
+\begin{minipage}{0.3819660113\textwidth}
+  \begin{description}[noitemsep]
+  \item mobile: \href{tel:+14698343984}{(469) 834-3984}
+  \item email: \href{mailto:arya@jhu.edu}{arya@jhu.edu}
+  \item web: \href{https://cs.jhu.edu/~arya}{cs.jhu.edu/$\sim$arya}
+  \end{description}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\eventYear{\JHU}{Ongoing}
+	Ph.D. in Computer Science
+	\begin{description}[noitemsep, labelindent=1em]
+	\item[Affiliation:] \CLSP
+	\item[Advisor:] \href{http://www.cs.jhu.edu/~yarowsky/}{David Yarowsky}
+	\end{description}
+
+\eventYear{\SMU}{2017}
+	M.S. in Computer Science
+	\begin{description}[noitemsep, labelindent=1em]
+	\item[Thesis:] \href{https://search.proquest.com/docview/1907180434?pq-origsite=gscholar}{The Leximin Method for Hierarchical Community Detection}
+	\item[Advisor:] \href{https://lyle.smu.edu/~matula/}{David W. Matula}
+	\end{description}
+ 
+\eventYear{\SMU}{2017}
+	B.S. in Computer Science, Mathematics
+	\begin{description}[noitemsep, labelindent=0.5em]
+	\item \href{http://www.smu.edu/dedman/studentresources/universityhonors}{Honors in the Liberal Arts, University Honors Program}
+	\end{description}
+	
+\eventYear{\HPHS}{2013}
+	Valedictorian
+	
+\emph{Single terms of study at the \UOE{} (2015) and \STAN{} (2014)}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Employment}
+
+\begin{samepage}
+\eventYear{\href{https://www.smu.edu/Lyle/Institutes/DeasonInstitute}{Darwin Deason Institute for Cyber Security}}{October 2015 -- May 2016}
+Research Assistant
+\begin{description}[nosep]
+\item[Host:] \href{https://s2.smu.edu/~mitch/}{Mitch Thornton, Ph.D.}
+\end{description}
+\end{samepage}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching}
+
+\begin{samepage}
+\eventYear{\SMU}{Spring 2018}
+\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#data-science}{Doing Data Science (MSDS 6306)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Grader
+\item[Professor:] Faizan Javed
+\end{description}
+\end{samepage}
+
+\begin{samepage}
+\eventYear{\SMU}{Fall 2017}
+\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#quantifying}{Quantifying the World (MSDS 7333)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Grader
+\item[Professor:] Owen Martin, John Verostek
+\item For three sections, I assisted weekly synchronous sessions and graded reports in SAS, Python, and R. Part of SMU's Master's of Science in Data Science program.
+\end{description}
+\end{samepage}
+
+\begin{samepage}
+\eventYear{\SMU}{Fall 2014}
+\href{https://tylermoore.ens.utulsa.edu/courses/cse3353/}{Fundamentals of Algorithms (CSE 3353)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Teaching Assistant
+\item[Professor:] \href{https://tylermoore.ens.utulsa.edu}{Tyler Moore, Ph.D.}
+\item Led 2 office hours weekly, answered questions via Piazza, and graded all assignments and exams for 30 students.
+\end{description}
+\end{samepage}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Grants}
+
+\textbf{\href{http://www.smu.edu/Dedman/DCII/Programs/Mayer}{Robert Mayer Interdisciplinary Fellowship}}
+\begin{description}[nosep, labelindent=1em]
+\item[Awarding body:] \href{http://www.smu.edu/Dedman/DCII}{SMU Dedman College Interdisciplinary Institute}
+\item[Amount:] \$1,500
+\item Coming Together, Mathematically: Dynamical Models for Increased Uniformity and Polarization in American Politics.
+\end{description}
+
+\begin{samepage}
+\textbf{\href{http://www.smu.edu/Dedman/DCII/Programs/Hamilton}{Hamilton Undergraduate Research Fellowship}}
+\begin{description}[nosep, labelindent=1em]
+\item[Awarding body:] \SMU
+\item[Amount:] \$3,000
+\item[Supervisor:] \href{http://faculty.smu.edu/snorris/}{Scott Norris, Ph.D.}
+\item Implemented and extended waveform relaxation solver for modeling interrelated differential equations without loss of accuracy.
+\end{description}
+\end{samepage}
+
+
+\begin{samepage}
+\textbf{\href{https://uraf.harvard.edu/amgen-scholars}{Harvard--Amgen Scholarship}}
+\begin{description}[nosep, labelindent=1em]
+\item[Awarding body:] \href{https://uraf.harvard.edu/home}{Harvard University}; \href{http://www.amgen.com/responsibility/amgen-foundation/}{Amgen Foundation}
+\item[Amount:] \$4,500
+\item[Supervisor:] \href{http://www.eecs.harvard.edu/shieber/}{Stuart Shieber, Ph.D.}
+\item Toward coreference resolution shared task, adapted multithreaded feature extraction code in Java to deliver features to Torch neural network.
+\end{description}
+\end{samepage}
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{itemize}
+\item \href{https://www.smu.edu/Academics/PS}{President's Scholarship}. Highest merit scholarship at SMU. Full tuition, study abroad, and dinners with Tate Lecture speakers. One of 21 in class of 2017.
+\item \href{https://www.smu.edu/Academics/PS/Benefits}{Campus Community Award}. Full room and board scholarship awarded for leadership and impact on campus. Approximately 90 chosen each year.
+\item \href{https://www.smu.edu/EnrollmentServices/Registrar/AcademicCeremonies/HonorsConvocation/HonorSocieties}{Robert S. Hyer Society}. Highest academic honor at SMU. One of 12 juniors selected in 2016.
+\item \href{https://www.smu.edu/EnrollmentServices/Registrar/AcademicCeremonies/HonorsConvocation/AwardRecipients}{Charles J. Pipes Award for Outstanding Performance in Mathematics}. One chosen each year.
+\item Dean's Award. Best CSE poster at \href{http://www.smu.edu/graduate/CurrentStudents/ResearchDay}{SMU Research Day 2017}: Nibhrat Lohia, Raunak Mundada, \textbf{Arya D. McCarthy}. \emph{AirWare: An Advanced In-Air Hand-Gesture Recognition System Using Ultrasonic Doppler Signatures Leveraging Deep Neural Network Architectures}.
+\item Tau Beta Pi (as sophomore)
+\item Upsilon Pi Epsilon (as junior)
+\end{itemize}
+
+ %----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\textbf{Refereed Conference Papers}
+
+\begin{enumerate}
+\item Christo Kirov, Ryan Cotterell, John Sylak-Glassman, G\'eraldine Walther, Ekaterina Vylomova, Patrick Xia, Manaal Faruqui, \textbf{Arya D. McCarthy}, Sandra K{\"u}bler, David Yarowsky, Jason Eisner, and Mans Hulden. 2018. \href{https://www.overleaf.com/11054329fbzfqmpdhvjh#/41647078/}{UniMorph 2.0: Universal Morphology}. \emph{Under submission.}
+\end{enumerate}
+
+\textbf{Non-Public Technical Reports}
+\begin{enumerate}[resume]
+\item \textbf{Arya D. McCarthy}. 2016. Design and Implementation of a Method of Abstractly Simulating Cyber Security Vulnerabilities: Embedded Markov and Discrete Event Simulation Approaches. \emph{Deason Institute for Cyber Security.}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	INVITED TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Invited Talks}
+\begin{enumerate}
+\item Toward Fast, Accurate Simulation of Gap Junctions in NNs. \hfill \Year{March 2017}\\
+Location: Southern Methodist University (as Summer Research Fellow)\\
+Host: Robert Kehoe
+\end{enumerate}
+
+ %----------------------------------------------------------------------------------------
+%	SERVICE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Service}
+
+\textbf{Professional Service}
+
+\begin{itemize}
+\item \href{https://github.com/networkx/networkx/pulls?utf8=?&q=is\%3Apr+author\%3Aaryamccarthy+}{Multiple contributions} to \href{http://networkx.github.io}{\texttt{networkx}} open-source library
+\item Webmaster for \href{https://sigmorphon.github.io}{SIGMORPHON}
+\item Webmaster for \href{https://unimorph.github.io}{UniMorph project}
+\item Webmaster for \href{http://ubicomp.lyle.smu.edu}{SMU Ubiquitous Computing Lab} (2016--2017)
+\item Founder and editor-in-chief, \href{https://smuresearch.wordpress.com/journal/}{\emph{SMU Journal of Undergraduate Research}} (2014--2017)
+\item Editor-in-chief, \href{https://smuresearch.wordpress.com/kairos/}{\emph{Kairos}} interdisciplinary magazine (2015--2016)
+\end{itemize}
+
+% \subsection{Community Service}
+
+\textbf{University Service}
+
+\begin{itemize}
+\item Judge for \href{https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest}{ACM-ICPC} contest at JHU
+\item Diversity and Inclusion Committee for \href{https://www.cs.jhu.edu}{Department of Computer Science}
+\item Faculty Liaison Committee for \clsp
+\item Vice-President, SMU Tau Beta Pi (2016--2017)
+\item President, SMU Upsilon Pi Epsilon (2015--2017)
+\item Sole student member of SMU Undergraduate Research Steering Committee
+\item Common Reading selection committee, SMU
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+\begin{description}[noitemsep]
+\item[David Yarowsky] (\href{mailto:yarowsky@jhu.edu}{yarowsky@jhu.edu}), \JHU
+\item[David W. Matula] (\href{mailto:matula@smu.edu}{matula@smu.edu}), \SMU
+\item[Scott Norris] (\href{mailto:snorris@smu.edu}{snorris@smu.edu}), \SMU
+\item[Eric C. Larson] (\href{mailto:eclarson@smu.edu}{eclarson@smu.edu}), \SMU
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{description}
+\item[Formal Languages:] Python, R, SAS, \CPP, SQL, Objective-C, Java, JavaScript, PHP, MATLAB, \LaTeX
+\item[Machine Learning Frameworks:] PyTorch, TensorFlow, scikit-learn
+\item[Natural Languages:] English, Farsi, Spanish, Italian, Romanian, Portuguese (written); basic Dutch and German
+\item[Graduate-Level Coursework in Computer Science:] Machine Translation, Machine Learning in Python, Data Mining, Algorithm Engineering, Computer Architecture, Linear Programming
+\item[Graduate-Level Coursework in Mathematics and Statistics:] Bayesian Statistics, Data Science, Numerical Methods I (numerical linear algebra) and II (numerical analysis), Mathematical Models in Biology
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Extracurricular Activities} 
+
+Bagpiper \\
+Ballroom Dancer\\
+If my first NLP paper is accepted to ACL 2018, I \emph{will} wear my kilt.
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+
+\end{document}
