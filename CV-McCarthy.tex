@@ -29,7 +29,7 @@
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{tgpagella}
 \usepackage{enumitem}
-\usepackage[colorlinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr} \pagestyle{fancy} \renewcommand{\headrulewidth}{0pt}
 \usepackage{dirtytalk}
 
@@ -46,14 +46,15 @@
 \newcommand{\CPP}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
+
 \author{Arya D. McCarthy}
 \date{\today}
 
 % Headers
 \makeatletter
 \lfoot{\@author}
+\cfoot{\@date}
 \makeatother
-\cfoot{\today}
 \rfoot{\thepage}
 
 % Hrefs
@@ -73,7 +74,7 @@
 %	NAME AND ADDRESS SECTION
 %----------------------------------------------------------------------------------------
 
-\moveleft2.5\hoffset\centerline{\textbf{\large Arya D. McCarthy}} % Your name at the top
+\moveleft2.425\hoffset\centerline{\textbf{\large Arya D. McCarthy}} % Your name at the top
  \vspace{-0.5em}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
  \vspace{-2em}
@@ -97,7 +98,7 @@
   \begin{description}[noitemsep]
   \item mobile: \href{tel:+14698343984}{(469) 834-3984}
   \item email: \href{mailto:arya@jhu.edu}{arya@jhu.edu}
-  \item web: \href{https://cs.jhu.edu/~arya}{cs.jhu.edu/$\sim$arya}
+  \item web: \href{https://cs.jhu.edu/~arya}{cs.jhu.edu/{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}arya}
   \end{description}
 \end{minipage}
 
@@ -127,8 +128,8 @@
 	\item \href{http://www.smu.edu/dedman/studentresources/universityhonors}{Honors in the Liberal Arts, University Honors Program}
 	\end{description}
 	
-\eventYear{\HPHS}{2013}
-	Valedictorian
+%\eventYear{\HPHS}{2013}
+%	Valedictorian
 	
 \emph{Single terms of study at the \UOE{} (2015) and \STAN{} (2014)}
 
@@ -148,50 +149,16 @@ Research Assistant
 \end{samepage}
 
 %----------------------------------------------------------------------------------------
-%	TEACHING SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Teaching}
-
-\begin{samepage}
-\eventYear{\SMU}{Spring 2018}
-\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#data-science}{Doing Data Science (MSDS 6306)}
-\begin{description}[noitemsep, labelindent=1em]
-\item[Role:] Grader
-\item[Professor:] Faizan Javed
-\end{description}
-\end{samepage}
-
-\begin{samepage}
-\eventYear{\SMU}{Fall 2017}
-\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#quantifying}{Quantifying the World (MSDS 7333)}
-\begin{description}[noitemsep, labelindent=1em]
-\item[Role:] Grader
-\item[Professor:] Owen Martin, John Verostek
-\item For three sections, I assisted weekly synchronous sessions and graded reports in SAS, Python, and R. Part of SMU's Master's of Science in Data Science program.
-\end{description}
-\end{samepage}
-
-\begin{samepage}
-\eventYear{\SMU}{Fall 2014}
-\href{https://tylermoore.ens.utulsa.edu/courses/cse3353/}{Fundamentals of Algorithms (CSE 3353)}
-\begin{description}[noitemsep, labelindent=1em]
-\item[Role:] Teaching Assistant
-\item[Professor:] \href{https://tylermoore.ens.utulsa.edu}{Tyler Moore, Ph.D.}
-\item Led 2 office hours weekly, answered questions via Piazza, and graded all assignments and exams for 30 students.
-\end{description}
-\end{samepage}
-
-%----------------------------------------------------------------------------------------
 %	GRANTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Grants}
+\section{Fellowships}
 
 \textbf{\href{http://www.smu.edu/Dedman/DCII/Programs/Mayer}{Robert Mayer Interdisciplinary Fellowship}}
 \begin{description}[nosep, labelindent=1em]
 \item[Awarding body:] \href{http://www.smu.edu/Dedman/DCII}{SMU Dedman College Interdisciplinary Institute}
 \item[Amount:] \$1,500
+\item[Supervisor:] \href{http://faculty.smu.edu/snorris/}{Scott Norris, Ph.D.} and \href{https://www.smu.edu/News/Experts/Matthew-Wilson}{Matthew Wilson, Ph.D.}
 \item Coming Together, Mathematically: Dynamical Models for Increased Uniformity and Polarization in American Politics.
 \end{description}
 
@@ -206,15 +173,50 @@ Research Assistant
 \end{samepage}
 
 
-\begin{samepage}
 \textbf{\href{https://uraf.harvard.edu/amgen-scholars}{Harvard--Amgen Scholarship}}
 \begin{description}[nosep, labelindent=1em]
 \item[Awarding body:] \href{https://uraf.harvard.edu/home}{Harvard University}; \href{http://www.amgen.com/responsibility/amgen-foundation/}{Amgen Foundation}
 \item[Amount:] \$4,500
 \item[Supervisor:] \href{http://www.eecs.harvard.edu/shieber/}{Stuart Shieber, Ph.D.}
-\item Toward coreference resolution shared task, adapted multithreaded feature extraction code in Java to deliver features to Torch neural network.
+\item Toward coreference resolution shared task, adapted multithreaded feature extraction code in Java to serialize and deliver features to Torch neural network.
+\end{description}
+
+\vspace{10em}
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching}
+
+\begin{samepage}
+\eventYear{\SMU}{Spring 2018}
+\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#data-science}{Doing Data Science (MSDS 6306)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Teaching Assistant
+\item[Professor:] Faizan Javed
+\item For two sections, I assisted weekly synchronous sessions and graded reports in SAS, Python, and R. Part of SMU's Master's of Science in Data Science program.
 \end{description}
 \end{samepage}
+
+\begin{samepage}
+\eventYear{\SMU}{Fall 2017}
+\href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#quantifying}{Quantifying the World (MSDS 7333)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Grader
+\item[Professor:] Owen Martin, John Verostek
+\end{description}
+\end{samepage}
+
+\begin{samepage}
+\eventYear{\SMU}{Fall 2014}
+\href{https://tylermoore.ens.utulsa.edu/courses/cse3353/}{Fundamentals of Algorithms (CSE 3353)}
+\begin{description}[noitemsep, labelindent=1em]
+\item[Role:] Teaching Assistant
+\item[Professor:] \href{https://tylermoore.ens.utulsa.edu}{Tyler Moore, Ph.D.}
+\item Led 2 office hours weekly, answered questions via Piazza, and graded all assignments and exams for 30 students.
+\end{description}
+\end{samepage}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -242,13 +244,20 @@ Research Assistant
 \textbf{Refereed Conference Papers}
 
 \begin{enumerate}
-\item Christo Kirov, Ryan Cotterell, John Sylak-Glassman, G\'eraldine Walther, Ekaterina Vylomova, Patrick Xia, Manaal Faruqui, \textbf{Arya D. McCarthy}, Sandra K{\"u}bler, David Yarowsky, Jason Eisner, and Mans Hulden. 2018. \href{https://www.overleaf.com/11054329fbzfqmpdhvjh#/41647078/}{UniMorph 2.0: Universal Morphology}. \emph{Under submission.}
+\item Christo Kirov, Ryan Cotterell, John Sylak-Glassman, G\'eraldine Walther, Ekaterina Vylomova, Patrick Xia, Manaal Faruqui, \textbf{Arya D. McCarthy}, Sandra K{\"u}bler, David Yarowsky, Jason Eisner, and Mans Hulden. 2018. {UniMorph 2.0: Universal Morphology}. In \emph{Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC)}. European Language Resources Association (ELRA).
 \end{enumerate}
 
+\textbf{Refereed Workshop Submissions}
+\begin{enumerate}[resume]
+\item \textbf{Arya D. McCarthy} and David W. Matula. 2018. Normalized Mutual Information Exaggerates Community Detection Performance. In \emph{SIAM Workshop on Network Science}, Portland, USA. Society for Industrial and Applied Mathematics. (Accepted)
+\end{enumerate}
+
+\begin{samepage}
 \textbf{Non-Public Technical Reports}
 \begin{enumerate}[resume]
 \item \textbf{Arya D. McCarthy}. 2016. Design and Implementation of a Method of Abstractly Simulating Cyber Security Vulnerabilities: Embedded Markov and Discrete Event Simulation Approaches. \emph{Deason Institute for Cyber Security.}
 \end{enumerate}
+\end{samepage}
 
 %----------------------------------------------------------------------------------------
 %	INVITED TALKS SECTION
@@ -267,11 +276,17 @@ Host: Robert Kehoe
 
 \section{Service}
 
+\textbf{Shared Task Organizer}
+\begin{itemize}
+\item \href{https://sigmorphon.github.io/sharedtasks/2018/}{CoNLL--SIGMORPHON 2018 Shared Task: Cross-Lingual Morphological Reinflection}
+
+\end{itemize}
+
 \textbf{Professional Service}
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item \href{https://github.com/networkx/networkx/pulls?utf8=?&q=is\%3Apr+author\%3Aaryamccarthy+}{Multiple contributions} to \href{http://networkx.github.io}{\texttt{networkx}} open-source library
-\item Webmaster for \href{https://sigmorphon.github.io}{SIGMORPHON}
+\item Webmaster for \href{https://sigmorphon.github.io}{ACL SIGMORPHON}
 \item Webmaster for \href{https://unimorph.github.io}{UniMorph project}
 \item Webmaster for \href{http://ubicomp.lyle.smu.edu}{SMU Ubiquitous Computing Lab} (2016--2017)
 \item Founder and editor-in-chief, \href{https://smuresearch.wordpress.com/journal/}{\emph{SMU Journal of Undergraduate Research}} (2014--2017)
@@ -282,7 +297,7 @@ Host: Robert Kehoe
 
 \textbf{University Service}
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Judge for \href{https://en.wikipedia.org/wiki/ACM_International_Collegiate_Programming_Contest}{ACM-ICPC} contest at JHU
 \item Diversity and Inclusion Committee for \href{https://www.cs.jhu.edu}{Department of Computer Science}
 \item Faculty Liaison Committee for \clsp
@@ -312,10 +327,10 @@ Host: Robert Kehoe
 \section{Skills}
 
 \begin{description}
-\item[Formal Languages:] Python, R, SAS, \CPP, SQL, Objective-C, Java, JavaScript, PHP, MATLAB, \LaTeX
-\item[Machine Learning Frameworks:] PyTorch, TensorFlow, scikit-learn
-\item[Natural Languages:] English, Farsi, Spanish, Italian, Romanian, Portuguese (written); basic Dutch and German
-\item[Graduate-Level Coursework in Computer Science:] Machine Translation, Machine Learning in Python, Data Mining, Algorithm Engineering, Computer Architecture, Linear Programming
+\item[Formal Languages:] Python, R, SAS, \CPP, SQL, Objective-C, Java, JavaScript, MATLAB, \LaTeX
+\item[Machine Learning Frameworks:] PyTorch, scikit-learn, TensorFlow
+\item[Natural Languages:] English, Farsi, Spanish, Italian, Romanian (written); basic Dutch and German
+\item[Graduate-Level Coursework in Computer Science:] Linguistic \& Sequence Modeling, Machine Translation, Machine Learning in Python, Data Mining, Algorithm Engineering, Computer Architecture, Linear Programming
 \item[Graduate-Level Coursework in Mathematics and Statistics:] Bayesian Statistics, Data Science, Numerical Methods I (numerical linear algebra) and II (numerical analysis), Mathematical Models in Biology
 \end{description}
 
@@ -327,7 +342,7 @@ Host: Robert Kehoe
 
 Bagpiper \\
 Ballroom Dancer\\
-If my first NLP paper is accepted to ACL 2018, I \emph{will} wear my kilt.
+If my first NLP paper is accepted to EMNLP 2018, I \emph{will} wear my kilt.
 
 %----------------------------------------------------------------------------------------
 
