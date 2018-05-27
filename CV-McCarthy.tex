@@ -32,6 +32,7 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr} \pagestyle{fancy} \renewcommand{\headrulewidth}{0pt}
 \usepackage{dirtytalk}
+\usepackage[usenames, dvipsnames]{color}
 
 
 %----------------------------------------------------------------------------------------
@@ -41,6 +42,11 @@
 \newcommand{\Year}[1]{\emph{#1}}
 \newcommand{\uni}[1]{\textbf{#1}}
 \newcommand{\eventYear}[2]{\uni{#1}\hfill{\Year{#2}}\\}
+
+% Color the section headers
+\definecolor{crimson}{RGB}{164, 16, 52}
+\let\oldsection\section
+\renewcommand{\section}[1]{\oldsection{\textcolor{crimson}{#1}}}
 
 % make "C++" look pretty when used in text by touching up the plus signs
 \newcommand{\CPP}
@@ -74,7 +80,7 @@
 %	NAME AND ADDRESS SECTION
 %----------------------------------------------------------------------------------------
 
-\moveleft2.425\hoffset\centerline{\textbf{\large Arya D. McCarthy}} % Your name at the top
+\moveleft2.425\hoffset\centerline{\textsc{\large Arya D. McCarthy}} % Your name at the top
  \vspace{-0.5em}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
  \vspace{-2em}
@@ -87,18 +93,18 @@
 \section{Contact Information}
 
 \noindent
-\begin{minipage}{0.6180339887\textwidth}
+\begin{minipage}{0.70339887\textwidth}
   \href{https://www.cs.jhu.edu/}{Department of Computer Science}\\
   \href{https://www.jhu.edu/}{Johns Hopkins University}\\
   Hackerman 321\\
   3400 North Charles Street\\
   Baltimore, MD 21218, USA
 \end{minipage}% This must go next to `\end{minipage}`
-\begin{minipage}{0.3819660113\textwidth}
+\begin{minipage}{0.2819660113\textwidth}
   \begin{description}[noitemsep]
-  \item mobile: \href{tel:+14698343984}{(469) 834-3984}
-  \item email: \href{mailto:arya@jhu.edu}{arya@jhu.edu}
-  \item web: \href{https://cs.jhu.edu/~arya}{cs.jhu.edu/{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}arya}
+  \item Phone: \href{tel:+14698343984}{\textsc{(469) 834-3984}}
+  \item \href{mailto:arya@jhu.edu}{arya@jhu.edu}
+  \item \href{https://cs.jhu.edu/~arya}{cs.jhu.edu/{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}arya}
   \end{description}
 \end{minipage}
 
@@ -189,7 +195,7 @@ Research Assistant
 \section{Teaching}
 
 \begin{samepage}
-\eventYear{\SMU}{Spring 2018}
+\eventYear{\SMU}{Spring 2018, Summer 2018}
 \href{https://datascience.smu.edu/academics/curriculum/coursedescriptions/#data-science}{Doing Data Science (MSDS 6306)}
 \begin{description}[noitemsep, labelindent=1em]
 \item[Role:] Teaching Assistant
@@ -247,9 +253,9 @@ Research Assistant
 \item Christo Kirov, Ryan Cotterell, John Sylak-Glassman, G\'eraldine Walther, Ekaterina Vylomova, Patrick Xia, Manaal Faruqui, \textbf{Arya D. McCarthy}, Sandra K{\"u}bler, David Yarowsky, Jason Eisner, and Mans Hulden. 2018. {UniMorph 2.0: Universal Morphology}. In \emph{Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC)}. European Language Resources Association (ELRA).
 \end{enumerate}
 
-\textbf{Refereed Workshop Submissions}
+\textbf{Refereed Workshop Proceedings}
 \begin{enumerate}[resume]
-\item \textbf{Arya D. McCarthy} and David W. Matula. 2018. Normalized Mutual Information Exaggerates Community Detection Performance. In \emph{SIAM Workshop on Network Science}, Portland, USA. Society for Industrial and Applied Mathematics. (Accepted)
+\item \textbf{Arya D. McCarthy} and David W. Matula. 2018. Normalized Mutual Information Exaggerates Community Detection Performance. In \emph{SIAM Workshop on Network Science}, Portland, USA. Society for Industrial and Applied Mathematics. (To appear)
 \end{enumerate}
 
 \begin{samepage}
@@ -286,8 +292,9 @@ Host: Robert Kehoe
 
 \begin{itemize}[noitemsep]
 \item \href{https://github.com/networkx/networkx/pulls?utf8=?&q=is\%3Apr+author\%3Aaryamccarthy+}{Multiple contributions} to \href{http://networkx.github.io}{\texttt{networkx}} open-source library
+\item Contributor to \texttt{scikit-learn} open-source library
 \item Webmaster for \href{https://sigmorphon.github.io}{ACL SIGMORPHON}
-\item Webmaster for \href{https://unimorph.github.io}{UniMorph project}
+\item Webmaster for \href{https://unimorph.github.io}{UniMorph morphology project}
 \item Webmaster for \href{http://ubicomp.lyle.smu.edu}{SMU Ubiquitous Computing Lab} (2016--2017)
 \item Founder and editor-in-chief, \href{https://smuresearch.wordpress.com/journal/}{\emph{SMU Journal of Undergraduate Research}} (2014--2017)
 \item Editor-in-chief, \href{https://smuresearch.wordpress.com/kairos/}{\emph{Kairos}} interdisciplinary magazine (2015--2016)
@@ -318,6 +325,7 @@ Host: Robert Kehoe
 \item[David W. Matula] (\href{mailto:matula@smu.edu}{matula@smu.edu}), \SMU
 \item[Scott Norris] (\href{mailto:snorris@smu.edu}{snorris@smu.edu}), \SMU
 \item[Eric C. Larson] (\href{mailto:eclarson@smu.edu}{eclarson@smu.edu}), \SMU
+\item[Daniel W. Engels] (\href{mailto:dwe@alum.mit.edu}{dwe@alum.mit.edu}), \SMU
 \end{description}
 
 %----------------------------------------------------------------------------------------
@@ -331,7 +339,7 @@ Host: Robert Kehoe
 \item[Machine Learning Frameworks:] PyTorch, scikit-learn, TensorFlow
 \item[Natural Languages:] English, Farsi, Spanish, Italian, Romanian (written); basic Dutch and German
 \item[Graduate-Level Coursework in Computer Science:] Linguistic \& Sequence Modeling, Machine Translation, Machine Learning in Python, Data Mining, Algorithm Engineering, Computer Architecture, Linear Programming
-\item[Graduate-Level Coursework in Mathematics and Statistics:] Bayesian Statistics, Data Science, Numerical Methods I (numerical linear algebra) and II (numerical analysis), Mathematical Models in Biology
+\item[Graduate-Level Coursework in Mathematics and Statistics:] Bayesian Statistics, Linear Programming, Data Science, Numerical Methods I (numerical linear algebra) and II (numerical analysis), Mathematical Models in Biology
 \end{description}
 
 %----------------------------------------------------------------------------------------
@@ -341,8 +349,8 @@ Host: Robert Kehoe
 \section{Extracurricular Activities} 
 
 Bagpiper \\
-Ballroom Dancer\\
-If my first NLP paper is accepted to EMNLP 2018, I \emph{will} wear my kilt.
+Ballroom Dancer% \\
+%If my first NLP paper is accepted to EMNLP 2018, I \emph{will} wear my kilt.
 
 %----------------------------------------------------------------------------------------
 
